@@ -23,22 +23,13 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".Home"
-            android:label="@string/title_activity_home" >
-        </activity>
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" >
-        </activity>
-
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MyActivity"
-            android:label="@string/title_activity_my" >
+                android:name=".engine.view.Home"
+                 >
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".NotificationActivity" />
@@ -49,17 +40,27 @@
             </intent-filter>
         </activity>
 
+       <activity
+                android:name=".engine.view.MyActivity"
+                android:label="@string/title_activity_my" >
+        </activity>
+
         <service
-            android:name=".engine.manager.location.ReceiveTransitionsIntentService"
+            android:name=".engine.controller.location.ReceiveTransitionsIntentService"
             android:exported="false" />
 
+
         <activity
-            android:name=".engine.view.MyActivityF"
-            android:label="@string/title_activity_my_activity_f" >
+                android:name=".engine.model.puzzle.SlidePuzzleMain"
+                android:label="Puzzle" >
         </activity>
         <activity
-                android:name=".engine.challenges.SlidePuzzleMain"
-                android:label="@string/title_activity_my_activity_f" >
+                android:name=".engine.model.question.Question"
+                android:label="Question" >
+        </activity>
+        <activity
+                android:name=".engine.model.flappy.FlappyMainActivity"
+                android:label="Flappy" >
         </activity>
     </application>
 

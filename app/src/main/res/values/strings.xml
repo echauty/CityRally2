@@ -4,7 +4,7 @@
     <string name="app_name">City Rally</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_home">Home</string>
+    <string name="title_activity_home">City Rally</string>
     <string name="welcome_button">START</string>
     <string name="title_picture">take a picture</string>
     <string name="title_comment">comment</string>
@@ -26,19 +26,19 @@
     <string name="server_error_dialog_message">An error occurred, please retry.</string>
     <string name="banned_user_dialog_message">You are banned from Smart City.</string>
     <string name="quit_title">Thank you !</string>
-    <string name="quit_message">Long text long text long text long text long text long text long</string>
+    <string name="quit_message">Bye!</string>
     <string name="quit_button">QUIT</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_navigation_drawer">NavigationDrawer</string>
     <string name="title_section1">Map</string>
-    <string name="title_section2">GeoFence</string>
-    <string name="title_section3">Challenges</string>
+    <string name="title_section2">Challenges</string>
+    <string name="title_section3">Mystery</string>
     <string name="title_section4">Puzzle</string>
     <string name="title_section5">Question</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
-    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_my">City Rally</string>
     <string name="title_activity_geofence">Geofence Entry</string>
 
     <!-- UI -->
@@ -144,14 +144,15 @@
     <string name="c_text_2">Go there and solve a puzzle</string>
     <string name="c_text_3">Go there and answer a question</string>
     <string name="c_text_4">Go there and fly like a bird</string>
-    <string name="c_game_1">P</string>
-    <string name="c_game_2">GameLux2</string>
-    <string name="c_game_3">GameLux3</string>
-    <string name="c_game_4">Flappy</string>
+    <string name="clue1">Clue 1: CHANTAL 25</string>
+    <string name="clue2">Clue 2: DOMINIQUE 54</string>
+    <string name="clue3">Clue 3: MICHELLE 35</string>
+    <string name="clue4">Clue 4: MARTINE 34</string>
+    <string name="mystery_answer">44</string>
+
+
     <string name="challenge_unlocked">New Challenge unlocked</string>
-    <string name="start">Start</string>
-    <string name="cancel">Cancel</string>
     <string name="wrong">This is not the correct answer</string>
-    <string name="challenge_inposition">You are in position, you can play the game</string>
+    <string name="challenge_inposition">You are in position, you can play the game. Please go back to the Challenge menu</string>
     
 </resources>

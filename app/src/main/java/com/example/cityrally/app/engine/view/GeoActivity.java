@@ -27,7 +27,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
@@ -37,13 +36,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.cityrally.app.R;
-import com.example.cityrally.app.engine.manager.location.GeofenceRequester;
-import com.example.cityrally.app.engine.manager.location.GeofenceUtils;
-import com.example.cityrally.app.engine.manager.location.GeofenceUtils.REMOVE_TYPE;
-import com.example.cityrally.app.engine.manager.location.GeofenceUtils.REQUEST_TYPE;
+import com.example.cityrally.app.engine.controller.location.GeofenceRequester;
+import com.example.cityrally.app.engine.controller.location.GeofenceUtils;
+import com.example.cityrally.app.engine.controller.location.GeofenceUtils.REMOVE_TYPE;
+import com.example.cityrally.app.engine.controller.location.GeofenceUtils.REQUEST_TYPE;
 
-import com.example.cityrally.app.engine.manager.location.SimpleGeofence;
-import com.example.cityrally.app.engine.manager.location.SimpleGeofenceStore;
+import com.example.cityrally.app.engine.controller.location.SimpleGeofence;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.location.Geofence;
@@ -88,9 +86,9 @@ public class GeoActivity extends Fragment {
     List<Geofence> mCurrentGeofences;
 
     // Add geofences handler
-    private com.example.cityrally.app.engine.manager.location.GeofenceRequester mGeofenceRequester;
+    private com.example.cityrally.app.engine.controller.location.GeofenceRequester mGeofenceRequester;
     // Remove geofences handler
-    private com.example.cityrally.app.engine.manager.location.GeofenceRemover mGeofenceRemover;
+    private com.example.cityrally.app.engine.controller.location.GeofenceRemover mGeofenceRemover;
     // Handle to geofence 1 latitude in the UI
     private EditText mLatitude1;
 
@@ -181,7 +179,7 @@ public class GeoActivity extends Fragment {
         mGeofenceRequester = new GeofenceRequester(getActivity());
 
         // Instantiate a Geofence remover
-        mGeofenceRemover = new com.example.cityrally.app.engine.manager.location.GeofenceRemover(this.mContext);
+        mGeofenceRemover = new com.example.cityrally.app.engine.controller.location.GeofenceRemover(this.mContext);
 
 
         // Get handles to the Geofence editor fields in the UI

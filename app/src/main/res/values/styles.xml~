@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/actionBar</item>
+        <item name="actionBarStyle">@style/actionBar</item>
+    </style>
+
+    <color name="backgroundOverlayCamera">#8c000000</color>
+    <color name="hintColor">#ffa3a3a3</color>
+    <color name="backgroundOverlayCamera5">#FFFFFF</color>
+<color name="action_bar_background">#ff009bff</color>
+
+<style name="actionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#ff009bff</item>
+        <item name="background">@color/action_bar_background</item>
+    </style>
+
+</resources>

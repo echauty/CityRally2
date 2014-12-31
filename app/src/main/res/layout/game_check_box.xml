@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <CheckBox android:id="@+id/checkBox1" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="950 000" android:checked="false" android:onClick="onCheckboxClicked"></CheckBox>
+    <CheckBox android:id="@+id/checkBox2" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="550 000" android:checked="false" android:onClick="onCheckboxClicked"></CheckBox>
+    <CheckBox android:id="@+id/checkBox3" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="450 000" android:checked="false" android:onClick="onCheckboxClicked"></CheckBox>
+</LinearLayout>
